@@ -22,15 +22,3 @@ img {
   width: 200px;
   margin-left: 0;
 }
-@keyframes tchoutchou {
-    from {margin-left: 0}
-    to {margin-left: 90%}
-}
-.go {
-  animation-name: tchoutchou;
-  animation-duration: 3s;
-  animation-timing-function: cubic-bezier(.8,.34,.62,.18);
-}
-.pause {
-  animation-play-state: paused;
-}
