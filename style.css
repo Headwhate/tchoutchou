@@ -1,0 +1,35 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lime;
+  min-height: 100vh;
+  width: 100%;
+  flex-direction: column;
+}
+#rails {
+  width: 90%;
+  border-top: 2px solid mistyrose;
+  border-bottom: 2px solid mistyrose;
+}
+img {
+  height: 200px;
+  width: 200px;
+}
+@keyframes tchoutchou {
+    from {margin-left: 0}
+    to {margin-left: 90%}
+}
+.go {
+  animation-name: tchoutchou;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(.8,.34,.62,.18);
+}
+.pause {
+  animation-play-state: paused;
+}
