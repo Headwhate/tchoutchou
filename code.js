@@ -1,16 +1,17 @@
+let speed = 0
+const traine = document.getElementById('train')
+
 function tchou() {
-  console.log('aaa')
-  const traine = document.getElementById('train')
-  train.classList.add('go')
-}
-function lose() {
-  alert('You lose !')
+  speed++;
+  train.style.marginLeft = `${Math.pow(speed, 3)/50000}%`
+  if (Number((train.style.marginLeft).replace(/%/, '')) > 90) {
+    alert('You lose !')
+    clearInterval(refreshIntervalId);;
+  }
 }
 function stop() {
-  const traine = document.getElementById('train')
-  train.classList.add('pause')
+  clearInterval(refreshIntervalId);
 }
 
-document.getElementById('stop').addEventListener('click', stop)
-document.getElementById('train').addEventListener('click', tchou)
-window.addEventListener('animationend', lose)
+document.getElementById('stop').addEventListener('click', stop);
+var refreshIntervalId = setInterval(tchou, 10);
