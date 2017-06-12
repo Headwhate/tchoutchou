@@ -3,6 +3,28 @@ body, html {
   padding: 0;
   box-sizing: border-box;
 }
+#score {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  border-top: 2px solid orange;
+  border-left: 2px solid orange;
+  border-right: 2px solid orange;
+  width: 30%;
+  padding: 0 1em;
+}
+#hiscore {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 2px solid orange;
+  border-left: 2px solid orange;
+  border-right: 2px solid orange;
+  width: 30%;
+  padding: 0 1em;
+  border-radius: 0 0 10px 10px;
+}
 body {
   display: flex;
   justify-content: center;
@@ -11,11 +33,27 @@ body {
   min-height: 100vh;
   width: 100%;
   flex-direction: column;
+  background-image: url(plaine.jpg);
+  background-size: cover;
 }
 #rails {
+  margin-top: 3em;
   width: 90%;
   border-top: 2px solid mistyrose;
   border-bottom: 2px solid mistyrose;
+}
+#buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#buttons * {
+  padding: 1em 3em;
+  margin-top: 1em;
+  background-color: lightblue;
+  border-radius: 10%;
+  color: white;
+  font-size: 32px;
 }
 img {
   height: 200px;
